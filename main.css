@@ -1,0 +1,41 @@
+
+.flex {
+  display: flex;
+}
+
+.f1 {
+  flex: 1;
+}
+.f2 {
+  flex: 2;
+}
+
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#main {
+  width: 665px;
+}
+
+#left-column {
+  width: 190px;
+}
+
+#right-column {
+  width: 475px;
+}
+
+#station-list {
+  height: 520px;
+}
