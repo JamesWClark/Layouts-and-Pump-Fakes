@@ -1,0 +1,142 @@
+html {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2D84DE;
+  font-family: Verdana;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#brand-bar {
+  background-color: #11204D;
+  color: #FFF;
+  padding: 7px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.left {
+  text-align: left;
+}
+
+
+
+.right {
+  text-align: right;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
+#player-controls {
+  align-items: center;
+  background-color: #224099;
+  color: #FFF;
+  justify-content: center;
+  padding: 7px;
+}
+
+.song-name {
+  font-weight: bold;
+}
+
+#media-box {
+  margin-top: 28px;
+  margin-left: 15%;
+  vertical-align: top;
+  width: 665px;
+}
+
+#main {
+  background-color: #2D84DE;
+}
+
+#now-playing {
+  background-color: #224099;
+  color: #FFF;
+  padding: 7px;
+}
+
+#left-content {
+  background-color: #D9E0EA;
+  border-right: solid #C6CAD9 1px;
+  width: 190px;
+}
+
+#right-content {
+  width: 475px;
+  background-color: #FFF;
+}
+#right-content .block {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+#station-list {
+    height: 512px;
+}
+
+#album-covers {
+  background-color: #062B58;
+  padding: 14px;
+}
+
+#publish-share-buy {
+  background-color: #E7ECF1;
+  padding: 7px 14px 7px 14px;
+  border-top: solid #C6CAD9 1px;
+  border-bottom: solid #C6CAD9 1px;
+}
+
+#sortby-date, #sortby-az {
+  border-top: solid #C6CAD9 1px;
+  border-bottom: solid #C6CAD9 1px;
+  padding: 7px;
+}
+#sortby-az {
+  border-left: solid #C6CAD9 1px;
+}
+
+#sortby .selected {
+  background-color: #E4E9F0;
+}
+
+.white {
+  color: #FFF;
+}
+
+#copyright {
+  color: #274EB4;
+  margin-top: 40px;
+  margin-bottom: 180px;
+}
+
+.center {
+  text-align: center;
+}
+
+#footer {
+  margin-top: 40px;
+}
