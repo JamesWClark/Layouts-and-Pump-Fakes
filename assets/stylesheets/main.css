@@ -149,3 +149,19 @@ a:hover {
   height: 215px;
   margin-left: 10px;
 }
+#album-mini-cover {
+  width: 47px;
+  height: 47px;
+}
+
+#player-controls2 {
+   align-items: center;
+  justify-content: center;
+}
+#player-controls2 .inline {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+

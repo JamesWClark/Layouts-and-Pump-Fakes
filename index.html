@@ -16,17 +16,17 @@
     <input placeholder="Create Station">
   </div>
   <div class="inline flex2 center">
-    <div class="block center">
-      <div class="inline"><img src="http://placehold.it/36x35"></div>
-      <div class="inline"><img src="http://placehold.it/36x35"></div>
-      <div class="inline" id="pause-play"><img src="http://placehold.it/36x35"></div>
-      <div class="inline" id="skip"><img src="http://placehold.it/36x35"></div>
-      <div class="inline"><img src="http://placehold.it/36x35"></div>
+    <div class="flex-container center" id="player-controls2">
+      <div class="inline" id="thumbs-down"><img src="assets/icons/btn_down.png"></div>
+      <div class="inline" id="thumbs-up"><img src="assets/icons/btn_up.png"></div>
+      <div class="inline" id="pause-play"><img src="/assets/icons/btn_pause.png"></div>
+      <div class="inline" id="skip"><img src="assets/icons/btn_skip.png"></div>
+      <div class="inline" id="volume"><img src="/assets/icons/volume_icon.png"></div>
     </div>
     <div class="block center">
-      <div class="inline"><span id="current-time">1:50</span></div>
-      <div class="inline"><progress value="50" max="100"></progress></div>
-      <div class="inline"><span id="end-time">3:00</span></div>
+      <div class="inline"><span id="current-time">0:00</span></div>
+      <div class="inline"><progress id="audio-progress" value="0" max="100"></progress></div>
+      <div class="inline"><span id="end-time">0:00</span></div>
     </div>
   </div>
   <div class="inline flex right">
@@ -35,7 +35,7 @@
       <div class="block">by <span class="artist-name">Artist Name</span></div>
       <div class="block">on <span class="album-name">Album Name</span></div>
     </div>
-    <div class="inline"><img src="http://placehold.it/47x47"></div>
+    <div class="inline"><img id="album-mini-cover" src="http://placehold.it/47x47"></div>
   </div>
 </div>
 

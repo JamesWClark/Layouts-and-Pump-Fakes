@@ -3,9 +3,20 @@ var currentTrack = {};
 var pausePlayState = 'play';
 var songCount = 0;
 
-var pause = function() {
-  currentTrack.audio.pause();
-}
+var updateProgress = function() {
+  var time = convertDuration(currentTrack.audio.currentTime + 1);
+  $('#current-time').text(time);
+  $('#audio-progress').attr('value',currentTrack.audio.currentTime);
+};
+
+//http://stackoverflow.com/questions/1322732/convert-seconds-to-hh-mm-ss-with-javascript
+var convertDuration = function(seconds) {
+  var h = parseInt(seconds / 3600 ) % 24;
+  var m = parseInt(seconds / 60 ) % 60;
+  var s = seconds % 60;
+  s = Math.floor(s);
+  return m + ":" + (s  < 10 ? "0" + s : s);
+};
 
 var nextTrack = function() {
   var data = music[songCount++];
@@ -13,8 +24,21 @@ var nextTrack = function() {
   $('.song-name').text(data.song);
   $('.artist-name').text(data.artist);
   $('.album-name').text(data.album);
+  $('#album-mini-cover').attr('src', data.art);
   $('#album-covers').prepend('<div class="inline"><img class="album-cover" src="' + data.art + '"></div>');
+  if(!currentTrack.audio.duration) {
+    currentTrack.audio.onloadedmetadata = function() {
+      var time = convertDuration(currentTrack.audio.duration);
+      $('#end-time').text(time);
+    };
+  } else {
+    var time = convertDuration(currentTrack.audio.duration);
+    $('#end-time').text(time);
+  }
   currentTrack.audio.play();
+  currentTrack.audio.ontimeupdate = updateProgress;
+  currentTrack.audio.onended = nextTrack;
+  $('#audio-progress').attr('max',currentTrack.audio.duration);
 };
 
 var loadMusicData = function(csv) {
@@ -42,9 +66,11 @@ var init = function() {
     if(pausePlayState === 'play') {
       currentTrack.audio.pause();
       pausePlayState = 'pause';
+      $('#pause-play > img').attr('src', '/assets/icons/btn_play.png');
     } else {
       currentTrack.audio.play();
       pausePlayState = 'play';
+      $('#pause-play > img').attr('src', '/assets/icons/btn_pause.png');
     }
   });
   
