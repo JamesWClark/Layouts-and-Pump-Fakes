@@ -101,6 +101,9 @@ a:hover {
 #album-covers {
   background-color: #062B58;
   padding: 14px;
+  overflow: hidden;
+  direction: rtl;
+  vertical-align: top;
 }
 
 #publish-share-buy {
@@ -139,4 +142,10 @@ a:hover {
 
 #footer {
   margin-top: 40px;
+}
+
+.album-cover {
+  width: 215px;
+  height: 215px;
+  margin-left: 10px;
 }

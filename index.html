@@ -19,8 +19,8 @@
     <div class="block center">
       <div class="inline"><img src="http://placehold.it/36x35"></div>
       <div class="inline"><img src="http://placehold.it/36x35"></div>
-      <div class="inline"><img src="http://placehold.it/36x35"></div>
-      <div class="inline"><img src="http://placehold.it/36x35"></div>
+      <div class="inline" id="pause-play"><img src="http://placehold.it/36x35"></div>
+      <div class="inline" id="skip"><img src="http://placehold.it/36x35"></div>
       <div class="inline"><img src="http://placehold.it/36x35"></div>
     </div>
     <div class="block center">
@@ -38,7 +38,6 @@
     <div class="inline"><img src="http://placehold.it/47x47"></div>
   </div>
 </div>
-
 
 <!-- main content -->
 <div class="block" id="main">
@@ -100,9 +99,7 @@
         </div>
       </div>
       <div class="inline" id="right-content">
-        <div class="block right" id="album-covers">
-          <img src="http://placehold.it/215x215">
-        </div>
+        <div class="flex-container right" id="album-covers"></div>
         <div class="block right">
           <div class="block right"><span class="song-name">Song Name</span></div>
           <div class="block right">by <span class="artist-name">Artist Name</span></div>
@@ -141,7 +138,3 @@
     </div>
   </div>
 </div>
-
-<audio id="current-song" autoplay>
-  <source src="music/led-zeppelin-stairway-to-heaven.mp3" type="audio/mpeg"/>
-</audio>
