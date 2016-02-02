@@ -4,9 +4,11 @@ var pausePlayState = 'play';
 var songCount = 0;
 
 var updateProgress = function() {
-  var time = convertDuration(currentTrack.audio.currentTime + 1);
-  $('#current-time').text(time);
+  var currentTime = convertDuration(currentTrack.audio.currentTime);
+  var endTime = convertDuration(currentTrack.audio.duration - currentTrack.audio.currentTime);
   $('#audio-progress').attr('value',currentTrack.audio.currentTime);
+  $('#current-time').text(currentTime);
+  $('#end-time').text('-' + endTime);
 };
 
 //http://stackoverflow.com/questions/1322732/convert-seconds-to-hh-mm-ss-with-javascript
@@ -30,15 +32,16 @@ var nextTrack = function() {
     currentTrack.audio.onloadedmetadata = function() {
       var time = convertDuration(currentTrack.audio.duration);
       $('#end-time').text(time);
+      $('#audio-progress').attr('max', currentTrack.audio.duration);
     };
   } else {
     var time = convertDuration(currentTrack.audio.duration);
     $('#end-time').text(time);
+    $('#audio-progress').attr('max', currentTrack.audio.duration);
   }
   currentTrack.audio.play();
   currentTrack.audio.ontimeupdate = updateProgress;
   currentTrack.audio.onended = nextTrack;
-  $('#audio-progress').attr('max',currentTrack.audio.duration);
 };
 
 var loadMusicData = function(csv) {
