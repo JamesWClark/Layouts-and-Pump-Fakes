@@ -1,0 +1,56 @@
+
+.flex {
+  display: flex;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#left-nav {
+  background-color: #19191F;
+  color: #FFF;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 206px;
+  padding: 17px;
+}
+
+
+
+#chat {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 340px;
+}
+
+#main {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+.fill {
+  width: 100%;
+  flex-grow: fill;
+}
+
+#settings {
+  padding-left: 7px;
+}
+
+#logout {
+  padding-left: 7px;
+}
+
+#follow-games {
+  background-color: #000;
+}
+
+#find-out-more {
+  background-color: #6441a5;
+}
