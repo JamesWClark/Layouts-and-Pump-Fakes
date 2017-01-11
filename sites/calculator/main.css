@@ -1,0 +1,48 @@
+#case {
+    width: 300px;
+    height: 500px;
+    margin: 25px auto auto auto;
+    background-color: royalblue;
+    padding: 5px;
+}
+
+#lcd {
+    display: inline-block;
+    background-color: lightgrey;
+    width: 270px;
+    margin: 5px 5px 2px 5px;
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;    
+    background-color: white;
+    text-align: center;
+    margin: 3px;
+    height: 60px;
+    width: 65px;
+    line-height: 65px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: lightcyan;
+}
+
+.button:active {
+    background-color: silver;
+}
+
+#lcd, .button {
+    font-family: consolas;
+}
+
+.row {
+    text-align: center;
+    margin: 3px 0 3px 0;
+}
