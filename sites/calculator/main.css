@@ -12,7 +12,6 @@
     width: 270px;
     margin: 5px 5px 2px 5px;
     height: 80px;
-    line-height: 80px;
     text-align: right;
     padding: 10px;
 }
@@ -45,4 +44,30 @@
 .row {
     text-align: center;
     margin: 3px 0 3px 0;
+}
+
+#top-panel {
+    height: 20px;
+    background-color: yellow;
+    width: 190px;
+}
+
+#main-panel {
+    height: 60px;
+    background-color: red;
+    width: 190px;
+}
+
+#hud-container {
+    display: inline-block;
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+#panels-container {
+    display: inline-block;
+    width: 190px;
+    float: left;
 }
