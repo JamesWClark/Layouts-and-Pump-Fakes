@@ -1,140 +1,152 @@
-<link href="assets/stylesheets/main.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script src="assets/scripts/colors.js"></script>
-<script src="assets/scripts/main.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- brand bar -->
-<div class="flex-container" id="brand-bar">
-  <div class="inline flex left">PANDORA</div>
-  <div class="inline flex center"><span id="station-name">Station Name</span></div>
-  <div class="inline flex right"><span id="email">email@email.com</span> | <a href="#">Upgrade</a></div>
-</div>
+<head>
+  <link href="assets/stylesheets/main.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
 
-<!-- player controls -->
-<div class="flex-container" id="player-controls">
-  <div class="flex">
-    <input placeholder="Create Station">
-  </div>
-  <div class="inline flex2 center">
-    <div class="flex-container center" id="player-controls2">
-      <div class="inline" id="thumbs-down"><img src="assets/icons/btn_down.png"></div>
-      <div class="inline" id="thumbs-up"><img src="assets/icons/btn_up.png"></div>
-      <div class="inline" id="pause-play"><img src="/assets/icons/btn_pause.png"></div>
-      <div class="inline" id="skip"><img src="assets/icons/btn_skip.png"></div>
-      <div class="inline" id="volume"><img src="/assets/icons/volume_icon.png"></div>
-    </div>
-    <div class="block center">
-      <div class="inline"><span id="current-time">0:00</span></div>
-      <div class="inline"><progress id="audio-progress" value="0" max="100"></progress></div>
-      <div class="inline"><span id="end-time">0:00</span></div>
-    </div>
-  </div>
-  <div class="inline flex right">
-    <div class="inline">
-      <div class="block"><span class="song-name">Song Name</span></div>
-      <div class="block">by <span class="artist-name">Artist Name</span></div>
-      <div class="block">on <span class="album-name">Album Name</span></div>
-    </div>
-    <div class="inline"><img id="album-mini-cover" src="http://placehold.it/47x47"></div>
-  </div>
-</div>
+<body>
 
-<!-- main content -->
-<div class="block" id="main">
-  <div id="media-box">
-    <div class="block" id="now-playing">
-      <div class="inline"><img src="http://placehold.it/17x14"> Now Playing</div>
-      <div class="inline"><img src="http://placehold.it/17x14"> Music Feed</div>
-      <div class="inline"><img src="http://placehold.it/17x14"> My Profile</div>
+  <!-- brand bar -->
+  <div class="flex-container" id="brand-bar">
+    <div class="inline flex left">PANDORA</div>
+    <div class="inline flex center"><span id="station-name">Station Name</span></div>
+    <div class="inline flex right"><span id="email">email@email.com</span> | <a href="#">Upgrade</a></div>
+  </div>
+
+  <!-- player controls -->
+  <div class="flex-container" id="player-controls">
+    <div class="flex">
+      <input place-holder="Create Station">
     </div>
-    <div class="flex-container">
-      <div class="inline" id="left-content">
-        <div class="block" id="station-list">
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-          <div class="block station-list-item">Radio Station</div>
-        </div>
-        <div class="flex-container" id="sortby">
-          <div class="flex center selected" id="sortby-date">Date</div>
-          <div class="flex center" id="sortby-az">A - Z</div>
-        </div>
-        <div class="block">
-          <img src="http://placehold.it/190x130">
-        </div>
-        <div class="block center">
-          <div class="inline">*</div>
-          <div class="inline">*</div>
-          <div class="inline">*</div>
-          <div class="inline">*</div>
-          <div class="inline">*</div>
-          <div class="inline">*</div>
-        </div>
-        <div class="block center">
-          <div class="inline">Pandora for your </div>
-          <div class="inline"><img src="http://placehold.it/17x14"></div>
-          <div class="inline"><img src="http://placehold.it/17x14"></div>
-          <div class="inline"><img src="http://placehold.it/17x14"></div>
-        </div>
+    <div class="inline flex2 center">
+      <div class="flex-container center" id="player-controls2">
+        <div class="inline" id="thumbs-down"><img src="assets/icons/btn_down.png"></div>
+        <div class="inline" id="thumbs-up"><img src="assets/icons/btn_up.png"></div>
+        <div class="inline" id="pause-play"><img src="/assets/icons/btn_pause.png"></div>
+        <div class="inline" id="skip"><img src="assets/icons/btn_skip.png"></div>
+        <div class="inline" id="volume"><img src="/assets/icons/volume_icon.png"></div>
       </div>
-      <div class="inline" id="right-content">
-        <div class="flex-container right" id="album-covers"></div>
-        <div class="block right">
-          <div class="block right"><span class="song-name">Song Name</span></div>
-          <div class="block right">by <span class="artist-name">Artist Name</span></div>
-          <div class="block right">on <span class="album-name">Album Name</span></div>
-        </div>
-        <div class="block right" id="publish-share-buy">
-          <div class="inline">
-            <div class="inline"><img src="http://placehold.it/19x19"> Publish</div>
-            <div class="inline"><img src="http://placehold.it/19x19"> Share...</div>
-            <div class="inline"><img src="http://placehold.it/19x19"> Buy</div>
-          </div>
-          <div class="inline">
-
-          </div>
-          <div class="inline"></div>
-        </div>
-      </div>
-    </div>
-    <div class="block" id="footer">
       <div class="block center">
-        <div class="inline"><a href="#">About</a></div>
-        <div class="inline"><a href="#">Advertising</a></div>
-        <div class="inline"><a href="#">Gifts</a></div>
-        <div class="inline"><a href="#">Submit Your Music</a></div>
-        <div class="inline"><a href="#">Blog</a></div>
-        <div class="inline"><a href="#">Jobs</a></div>
-        <div class="inline"><a href="#">Investor</a></div>
-        <div class="inline"><a href="#">Press</a></div>
-        <div class="inline"><a href="#">Privacy</a></div>
-        <div class="inline"><a href="#">Terms</a></div>
-        <div class="inline"><a href="#">Ad Preferences</a></div>
+        <div class="inline"><span id="current-time">0:00</span></div>
+        <div class="inline"><progress id="audio-progress" value="0" max="100"></progress></div>
+        <div class="inline"><span id="end-time">0:00</span></div>
       </div>
-      <div class="block center" id="copyright">
-        @ 2016 Pandora Music, Inc., All Rights Reserved. Pandora and the Music Genome Project are registered trademarks of Pandora Media, Inc.
+    </div>
+    <div class="inline flex right">
+      <div class="inline">
+        <div class="block"><span class="song-name">Song Name</span></div>
+        <div class="block">by <span class="artist-name">Artist Name</span></div>
+        <div class="block">on <span class="album-name">Album Name</span></div>
+      </div>
+      <div class="inline"><img id="album-mini-cover" src="http://place-hold.it/47x47"></div>
+    </div>
+  </div>
+
+  <!-- main content -->
+  <div class="block" id="main">
+    <div id="media-box">
+      <div class="block" id="now-playing">
+        <div class="inline"><img src="http://place-hold.it/17x14"> Now Playing</div>
+        <div class="inline"><img src="http://place-hold.it/17x14"> Music Feed</div>
+        <div class="inline"><img src="http://place-hold.it/17x14"> My Profile</div>
+      </div>
+      <div class="flex-container">
+        <div class="inline" id="left-content">
+          <div class="block" id="station-list">
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+            <div class="block station-list-item">Radio Station</div>
+          </div>
+          <div class="flex-container" id="sortby">
+            <div class="flex center selected" id="sortby-date">Date</div>
+            <div class="flex center" id="sortby-az">A - Z</div>
+          </div>
+          <div class="block">
+            <img src="http://place-hold.it/190x130">
+          </div>
+          <div class="block center">
+            <div class="inline">*</div>
+            <div class="inline">*</div>
+            <div class="inline">*</div>
+            <div class="inline">*</div>
+            <div class="inline">*</div>
+            <div class="inline">*</div>
+          </div>
+          <div class="block center">
+            <div class="inline">Pandora for your </div>
+            <div class="inline"><img src="http://place-hold.it/17x14"></div>
+            <div class="inline"><img src="http://place-hold.it/17x14"></div>
+            <div class="inline"><img src="http://place-hold.it/17x14"></div>
+          </div>
+        </div>
+        <div class="inline" id="right-content">
+          <div class="flex-container right" id="album-covers"></div>
+          <div class="block right">
+            <div class="block right"><span class="song-name">Song Name</span></div>
+            <div class="block right">by <span class="artist-name">Artist Name</span></div>
+            <div class="block right">on <span class="album-name">Album Name</span></div>
+          </div>
+          <div class="block right" id="publish-share-buy">
+            <div class="inline">
+              <div class="inline"><img src="http://place-hold.it/19x19"> Publish</div>
+              <div class="inline"><img src="http://place-hold.it/19x19"> Share...</div>
+              <div class="inline"><img src="http://place-hold.it/19x19"> Buy</div>
+            </div>
+            <div class="inline">
+
+            </div>
+            <div class="inline"></div>
+          </div>
+        </div>
+      </div>
+      <div class="block" id="footer">
+        <div class="block center">
+          <div class="inline"><a href="#">About</a></div>
+          <div class="inline"><a href="#">Advertising</a></div>
+          <div class="inline"><a href="#">Gifts</a></div>
+          <div class="inline"><a href="#">Submit Your Music</a></div>
+          <div class="inline"><a href="#">Blog</a></div>
+          <div class="inline"><a href="#">Jobs</a></div>
+          <div class="inline"><a href="#">Investor</a></div>
+          <div class="inline"><a href="#">Press</a></div>
+          <div class="inline"><a href="#">Privacy</a></div>
+          <div class="inline"><a href="#">Terms</a></div>
+          <div class="inline"><a href="#">Ad Preferences</a></div>
+        </div>
+        <div class="block center" id="copyright">
+          @ 2016 Pandora Music, Inc., All Rights Reserved. Pandora and the Music Genome Project are registered trademarks of Pandora Media, Inc.
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="assets/scripts/colors.js"></script>
+  <script src="assets/scripts/main.js"></script>
+
+</body>
+</html>
